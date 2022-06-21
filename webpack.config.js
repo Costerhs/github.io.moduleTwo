@@ -17,24 +17,6 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
-    optimization: {
-        minimize: true,
-        minimizer: [
-            new TerserWebpackPlugin(),
-            new CssMinimizerplugin(),
-            new ImgMinimizer({
-                minimizer: {
-                    implementation: ImgMinimizer.imageminMinify,
-                    options: {
-                        plugins: [
-                            ["imagemin-mozjpeg", { progressive: true }],
-                            ["imagemin-pngquant", { optimizationLevel: 8 }],
-                        ],
-                    },
-                },
-            }),
-        ]
-    },
     devServer: {
         port: 3003,
         static: {
