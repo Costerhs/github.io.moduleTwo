@@ -90,8 +90,6 @@
                 }
             }
         }
-
-
     }
 
     .cube {
@@ -126,7 +124,9 @@
 
 @media (max-width:768px) {
     .main {
-        background: none;
+        background: url(../img/arrows.svg) no-repeat;
+        background-position: 50% 90%;
+
 
         .main-bg {
             background: none;
