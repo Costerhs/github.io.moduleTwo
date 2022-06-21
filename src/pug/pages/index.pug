@@ -1,0 +1,28 @@
+extends ../maket.pug
+block content
+     .main
+          .main-bg
+               .start.col-6
+                    .start__title-first.col-12 Создаем решения 
+                    .start__title-second.col-8   для роста бизнеса 
+                    .start__subtitle.col-8 На основе анализа данных с алгоритмами реализации
+                    button.start__button Обсудить проблему 
+               .cube.col-5 
+                    img(src="img/cube.svg", alt="er")
+     .questes
+          include question
+     .service 
+          h1.service__title Услуги
+          .service__list 
+               .service__item1 
+                    img(src="img/service/book.svg", alt="er").service__img
+                    p.service__text Разрабатываем маркетинг-план: дорожная карта достижения целей
+               .service__item2
+                    img(src="img/service/glasses.svg", alt="er").service__img
+                    p.service__text Повышаем эффективность продвижения: аудит существующей модели
+               .service__item3 
+                    img(src="img/service/glass.svg", alt="er").service__img
+                    p.service__text Находим скрытую прибыль: анализ модели ценообразования
+               .service__item4 
+                    img(src="img/service/rocket.svg", alt="er").service__img
+                    p.service__text Запускаем новый проект: start-up маркетинг
